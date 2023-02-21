@@ -1,0 +1,89 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+};
+
+:root {
+  --backboard-color:  #1B244A;
+  --background-scoreColor: #080001;
+  --team-color: #EEEEEE;
+  --border-counterColor: #9AABD8;
+  --score-color: #F94F6D;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #28292e;
+  height: 100vh;
+}
+
+
+.scoreboard {
+  display: flex;
+  justify-content: space-around;
+  width: 575px;
+  height: 385px;
+  background-color: #1B244A;
+  text-align: center;
+}
+
+.scoreboard h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: 700;
+  font-size: 40px;
+  line-height: 36px;
+  color: #EEEEEE;
+}
+
+.home-score-total,
+.guest-score-total {
+  width: 155px;
+  display: inline-block;
+  height: 120px;
+  font-family: 'Cursed Timer ULiL';
+  background: #080001;
+  margin: 21px 0 26px 0;
+  color: #F94F6D;
+  font-weight: 700;
+  font-size: 90px;
+  line-height: 127px;
+}
+
+.home-container {
+  margin-top: 68px;
+}
+
+.guest-container {
+  margin-top: 68px;
+}
+
+.button-container { 
+  display: flex;
+  justify-content: space-between;
+}
+.scoreboard button {
+  width: 45px;
+  height: 45px;
+  border: 2px solid #9AABD8;
+  border-radius: 5px;
+  background: #1B244A;
+  color: white;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.timer {
+  position: absolute;
+  margin-top: 15px;
+  font-size: 25px;
+  color: #F94F6D;
+  font-family: 'Cursed Timer ULiL';
+  background: black;
+  padding: 10px;
+}
+

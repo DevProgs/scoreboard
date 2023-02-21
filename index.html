@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="scoreboard">
+      <div class="timer">START!</div>
+      <div class="home-container">
+        <h1>HOME</h1>
+        <h2 class="home-score-total" data-score="home-score">0</h2>
+        <div class="home-button-container">
+          <button data-value=1 data-target="home-score">+1</button>
+          <button data-value=2 data-target="home-score">+2</button>
+          <button data-value=3 data-target="home-score">+3</button>
+        </div>
+      </div>
+      <div class="guest-container">
+        <h1>GUEST</h1>
+        <h2 class="guest-score-total" data-score="guest-score">0</h2>
+        <div class="guest-button-container">
+          <button data-value=1 data-target="guest-score">+1</button>
+          <button data-value=2 data-target="guest-score">+2</button>
+          <button data-value=3 data-target="guest-score">+3</button>
+        </div>
+      </div>
+    </div>
+    <script src="other.js"></script>
+  </body>
+</html>
